@@ -1,0 +1,322 @@
+{
+	"info": {
+		"_postman_id": "",
+		"name": "FIAP_PROJETO_FINAL",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "",
+		"_collection_link": ""
+	},
+	"item": [
+		{
+			"name": "REGISTRAR-MARCAS-MODELOS-EM-LOTE",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    { \"marca\": \"Fiat\", \"modelos\": [\"Uno\", \"Palio\", \"Argo\", \"Toro\", \"Strada\", \"Mobi\", \"Cronos\", \"Siena\", \"Punto\"] },\r\n    { \"marca\": \"Volkswagen\", \"modelos\": [\"Gol\", \"Polo\", \"Virtus\", \"T-Cross\", \"Fox\", \"Voyage\", \"Saveiro\", \"Jetta\", \"Golf\"] },\r\n    { \"marca\": \"Chevrolet\", \"modelos\": [\"Onix\", \"Prisma\", \"Celta\", \"S10\", \"Spin\", \"Cruze\", \"Tracker\", \"Cobalt\", \"Montana\"] },\r\n    { \"marca\": \"Ford\", \"modelos\": [\"Fiesta\", \"Ka\", \"Ecosport\", \"Focus\", \"Fusion\", \"Ranger\", \"Edge\", \"Territory\"] },\r\n    { \"marca\": \"Honda\", \"modelos\": [\"Civic\", \"Fit\", \"City\", \"HR-V\", \"WR-V\", \"Accord\"] },\r\n    { \"marca\": \"Toyota\", \"modelos\": [\"Corolla\", \"Etios\", \"Hilux\", \"Yaris\", \"SW4\", \"RAV4\"] },\r\n    { \"marca\": \"Hyundai\", \"modelos\": [\"HB20\", \"Creta\", \"Tucson\", \"i30\", \"Santa Fe\"] },\r\n    { \"marca\": \"Renault\", \"modelos\": [\"Sandero\", \"Logan\", \"Duster\", \"Kwid\", \"Captur\", \"Oroch\"] },\r\n    { \"marca\": \"Nissan\", \"modelos\": [\"March\", \"Versa\", \"Kicks\", \"Sentra\", \"Frontier\"] },\r\n    { \"marca\": \"Jeep\", \"modelos\": [\"Compass\", \"Renegade\", \"Commander\", \"Wrangler\"] },\r\n    { \"marca\": \"Peugeot\", \"modelos\": [\"208\", \"2008\", \"308\", \"3008\", \"Partner\"] },\r\n    { \"marca\": \"Citroën\", \"modelos\": [\"C3\", \"C4\", \"Aircross\", \"Cactus\", \"Berlingo\"] },\r\n    { \"marca\": \"Mitsubishi\", \"modelos\": [\"L200\", \"Outlander\", \"ASX\", \"Pajero\"] },\r\n    { \"marca\": \"Suzuki\", \"modelos\": [\"Jimny\", \"Vitara\", \"S-Cross\"] },\r\n    { \"marca\": \"BMW\", \"modelos\": [\"320i\", \"X1\", \"X3\", \"X5\", \"118i\"] },\r\n    { \"marca\": \"Mercedes-Benz\", \"modelos\": [\"Classe C\", \"Classe A\", \"GLA\", \"GLC\"] },\r\n    { \"marca\": \"Audi\", \"modelos\": [\"A3\", \"A4\", \"Q3\", \"Q5\"] },\r\n    { \"marca\": \"Kia\", \"modelos\": [\"Sportage\", \"Cerato\", \"Soul\", \"Picanto\"] },\r\n    { \"marca\": \"Chery\", \"modelos\": [\"Tiggo 2\", \"Tiggo 5X\", \"Arrizo 5\"] },\r\n    { \"marca\": \"Land Rover\", \"modelos\": [\"Discovery\", \"Evoque\", \"Range Rover\"] },\r\n    { \"marca\": \"Volvo\", \"modelos\": [\"XC40\", \"XC60\", \"XC90\", \"S60\"] },\r\n    { \"marca\": \"Subaru\", \"modelos\": [\"Forester\", \"XV\", \"Impreza\"] },\r\n    { \"marca\": \"JAC\", \"modelos\": [\"T40\", \"T50\", \"iEV20\"] },\r\n    { \"marca\": \"Lifan\", \"modelos\": [\"X60\", \"X80\", \"530\"] },\r\n    { \"marca\": \"Mini\", \"modelos\": [\"Cooper\", \"Countryman\"] },\r\n    { \"marca\": \"Ram\", \"modelos\": [\"1500\", \"2500\"] }\r\n  ]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/marcas-modelos/lote",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"marcas-modelos",
+						"lote"
+					]
+				},
+				"description": "Generated from cURL: curl -X POST http://localhost:3001/marcas-modelos/lote \\\r\n  -H \"Content-Type: application/json\" \\\r\n  -d '[\r\n    { \"marca\": \"Fiat\", \"modelos\": [\"Uno\", \"Palio\", \"Argo\", \"Toro\", \"Strada\", \"Mobi\", \"Cronos\", \"Siena\", \"Punto\"] },\r\n    { \"marca\": \"Volkswagen\", \"modelos\": [\"Gol\", \"Polo\", \"Virtus\", \"T-Cross\", \"Fox\", \"Voyage\", \"Saveiro\", \"Jetta\", \"Golf\"] },\r\n    { \"marca\": \"Chevrolet\", \"modelos\": [\"Onix\", \"Prisma\", \"Celta\", \"S10\", \"Spin\", \"Cruze\", \"Tracker\", \"Cobalt\", \"Montana\"] },\r\n    { \"marca\": \"Ford\", \"modelos\": [\"Fiesta\", \"Ka\", \"Ecosport\", \"Focus\", \"Fusion\", \"Ranger\", \"Edge\", \"Territory\"] },\r\n    { \"marca\": \"Honda\", \"modelos\": [\"Civic\", \"Fit\", \"City\", \"HR-V\", \"WR-V\", \"Accord\"] },\r\n    { \"marca\": \"Toyota\", \"modelos\": [\"Corolla\", \"Etios\", \"Hilux\", \"Yaris\", \"SW4\", \"RAV4\"] },\r\n    { \"marca\": \"Hyundai\", \"modelos\": [\"HB20\", \"Creta\", \"Tucson\", \"i30\", \"Santa Fe\"] },\r\n    { \"marca\": \"Renault\", \"modelos\": [\"Sandero\", \"Logan\", \"Duster\", \"Kwid\", \"Captur\", \"Oroch\"] },\r\n    { \"marca\": \"Nissan\", \"modelos\": [\"March\", \"Versa\", \"Kicks\", \"Sentra\", \"Frontier\"] },\r\n    { \"marca\": \"Jeep\", \"modelos\": [\"Compass\", \"Renegade\", \"Commander\", \"Wrangler\"] },\r\n    { \"marca\": \"Peugeot\", \"modelos\": [\"208\", \"2008\", \"308\", \"3008\", \"Partner\"] },\r\n    { \"marca\": \"Citroën\", \"modelos\": [\"C3\", \"C4\", \"Aircross\", \"Cactus\", \"Berlingo\"] },\r\n    { \"marca\": \"Mitsubishi\", \"modelos\": [\"L200\", \"Outlander\", \"ASX\", \"Pajero\"] },\r\n    { \"marca\": \"Suzuki\", \"modelos\": [\"Jimny\", \"Vitara\", \"S-Cross\"] },\r\n    { \"marca\": \"BMW\", \"modelos\": [\"320i\", \"X1\", \"X3\", \"X5\", \"118i\"] },\r\n    { \"marca\": \"Mercedes-Benz\", \"modelos\": [\"Classe C\", \"Classe A\", \"GLA\", \"GLC\"] },\r\n    { \"marca\": \"Audi\", \"modelos\": [\"A3\", \"A4\", \"Q3\", \"Q5\"] },\r\n    { \"marca\": \"Kia\", \"modelos\": [\"Sportage\", \"Cerato\", \"Soul\", \"Picanto\"] },\r\n    { \"marca\": \"Chery\", \"modelos\": [\"Tiggo 2\", \"Tiggo 5X\", \"Arrizo 5\"] },\r\n    { \"marca\": \"Land Rover\", \"modelos\": [\"Discovery\", \"Evoque\", \"Range Rover\"] },\r\n    { \"marca\": \"Volvo\", \"modelos\": [\"XC40\", \"XC60\", \"XC90\", \"S60\"] },\r\n    { \"marca\": \"Subaru\", \"modelos\": [\"Forester\", \"XV\", \"Impreza\"] },\r\n    { \"marca\": \"JAC\", \"modelos\": [\"T40\", \"T50\", \"iEV20\"] },\r\n    { \"marca\": \"Lifan\", \"modelos\": [\"X60\", \"X80\", \"530\"] },\r\n    { \"marca\": \"Mini\", \"modelos\": [\"Cooper\", \"Countryman\"] },\r\n    { \"marca\": \"Ram\", \"modelos\": [\"1500\", \"2500\"] }\r\n  ]'\r\n"
+			},
+			"response": []
+		},
+		{
+			"name": "RECUPERA-MARCAS-MODELOS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/marcas-modelos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"marcas-modelos"
+					]
+				},
+				"description": "Generated from cURL: curl -i -X GET http://localhost:3001/marcas-modelos\r\n"
+			},
+			"response": []
+		},
+		{
+			"name": "Cadastrar_veiculos VALIDO",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"marca\": \"HONDA\",\r\n    \"modelo\": \"HR-V\",\r\n    \"ano\": 1999,\r\n    \"placa\": \"HRV1995\"\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/veiculos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"veiculos"
+					]
+				},
+				"description": "Generated from cURL: curl -X POST http://localhost:3001/veiculos \\\r\n  -H \"Content-Type: application/json\" \\\r\n  -d '{\r\n    \"marca\": \"Fiat\",\r\n    \"modelo\": \"Uno\",\r\n    \"ano\": 2020,\r\n    \"placa\": \"ABC1234\"\r\n  }'\r\n"
+			},
+			"response": []
+		},
+		{
+			"name": "Cadastrar_veiculos PLACA INVALIDA",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"marca\": \"HONDA\",\r\n    \"modelo\": \"CIVIC\",\r\n    \"ano\": 1999,\r\n    \"placa\": \"FIT1999\"\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/veiculos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"veiculos"
+					]
+				},
+				"description": "Generated from cURL: curl -X POST http://localhost:3001/veiculos \\\r\n  -H \"Content-Type: application/json\" \\\r\n  -d '{\r\n    \"marca\": \"Fiat\",\r\n    \"modelo\": \"Uno\",\r\n    \"ano\": 2020,\r\n    \"placa\": \"ABC1234\"\r\n  }'\r\n"
+			},
+			"response": []
+		},
+		{
+			"name": "Cadastrar_veiculos MODELO INVALIDO",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"marca\": \"HONDA\",\r\n    \"modelo\": \"FIIT\",\r\n    \"ano\": 1999,\r\n    \"placa\": \"FIT1999\"\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/veiculos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"veiculos"
+					]
+				},
+				"description": "Generated from cURL: curl -X POST http://localhost:3001/veiculos \\\r\n  -H \"Content-Type: application/json\" \\\r\n  -d '{\r\n    \"marca\": \"Fiat\",\r\n    \"modelo\": \"Uno\",\r\n    \"ano\": 2020,\r\n    \"placa\": \"ABC1234\"\r\n  }'\r\n"
+			},
+			"response": []
+		},
+		{
+			"name": "Cadastrar_veiculos MARCA INVALIDA",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"marca\": \"ONDA\",\r\n    \"modelo\": \"FIT\",\r\n    \"ano\": 1999,\r\n    \"placa\": \"FIT1999\"\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/veiculos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"veiculos"
+					]
+				},
+				"description": "Generated from cURL: curl -X POST http://localhost:3001/veiculos \\\r\n  -H \"Content-Type: application/json\" \\\r\n  -d '{\r\n    \"marca\": \"Fiat\",\r\n    \"modelo\": \"Uno\",\r\n    \"ano\": 2020,\r\n    \"placa\": \"ABC1234\"\r\n  }'\r\n"
+			},
+			"response": []
+		},
+		{
+			"name": "Cadastrar_veiculos ANO INVALIDO",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"marca\": \"FORD\",\r\n    \"modelo\": \"FIESTA\",\r\n    \"ano\": 2028,\r\n    \"placa\": \"FOR2025\"\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/veiculos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"veiculos"
+					]
+				},
+				"description": "Generated from cURL: curl -X POST http://localhost:3001/veiculos \\\r\n  -H \"Content-Type: application/json\" \\\r\n  -d '{\r\n    \"marca\": \"Fiat\",\r\n    \"modelo\": \"Uno\",\r\n    \"ano\": 2020,\r\n    \"placa\": \"ABC1234\"\r\n  }'\r\n"
+			},
+			"response": []
+		},
+		{
+			"name": "Listar_veiculos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3002/veiculos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"veiculos"
+					]
+				},
+				"description": "Generated from cURL: curl -X GET http://localhost:3002/veiculos\r\n"
+			},
+			"response": []
+		},
+		{
+			"name": "Listar_veiculos_PLACA",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3002/veiculos/placa/CIV1999",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"veiculos",
+						"placa",
+						"CIV1999"
+					]
+				},
+				"description": "Generated from cURL: curl -X GET http://localhost:3002/veiculos\r\n"
+			},
+			"response": []
+		},
+		{
+			"name": "Listar_veiculos_MARCA",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3002/veiculos/marca/HONDA",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"veiculos",
+						"marca",
+						"HONDA"
+					]
+				},
+				"description": "Generated from cURL: curl -X GET http://localhost:3002/veiculos\r\n"
+			},
+			"response": []
+		},
+		{
+			"name": "Listar_veiculos_ANO",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3002/veiculos/ano/1999",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"veiculos",
+						"ano",
+						"1999"
+					]
+				},
+				"description": "Generated from cURL: curl -X GET http://localhost:3002/veiculos\r\n"
+			},
+			"response": []
+		}
+	]
+}
